@@ -23,11 +23,14 @@ const events = () => {
 
 export const Login = () => {
     login.innerHTML = `
-        <label for="email">Usuário</label>
-        <input id="email" name="email" type="email" />
+        <h2>Faça seu login</h2>
+        <div>
+            <label for="email">Usuário</label>
+            <input id="email" name="email" type="email" placeholder="nome do usuário"/>
 
-        <label for="senha">Senha</label>
-        <input id="senha" name="senha" type="password" />
+            <label for="senha">Senha</label>
+            <input id="senha" name="senha" type="password" placeholder="sua senha" />
+        </div>
 
         <fildset>
             <label for="salvar">Salvar</label>
@@ -36,10 +39,11 @@ export const Login = () => {
             <input name="salvar" id="nao-salvar" type="radio" value="false" />
         </fildset>
 
-        <button id="btn-entrar">Entrar</button>
-        <p>Não tem conta? <a href="/#signup">Crie agora!</a></p>
+        <div>
+            <button id="btn-entrar">Fazer login</button>
+        </div>
+        <p>Não tem conta? <a href="/#signup" id="criar-conta">Crie agora!</a></p>
     `
-
     events()
     return login
 }
