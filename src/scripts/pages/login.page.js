@@ -36,7 +36,7 @@ export const Login = () => {
             <label for="salvar">Salvar</label>
             <input name="salvar" id="salvar" type="radio" value="true" checked="checked"/>
             <label for="nao-salvar">Não salvar</label>
-            <input name="salvar" id="nao-salvar" type="radio" value="false" />
+            <input name="salvar" id="nao-salvar" type="radio" value="false"/>
         </fildset>
 
         <div>

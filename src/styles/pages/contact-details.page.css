@@ -4,4 +4,17 @@
 
 #p-contact-details a {
   display: block;
+  text-decoration: none;
+  color: white;
+}
+
+#p-contact-details .dados-contato {
+  display: flex;
+  max-width: 30%;
+  justify-content: space-between;
+}
+
+#p-contact-details p {
+  margin: 5px 12px;
+
 }

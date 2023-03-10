@@ -53,7 +53,7 @@ input {
   font-family: Segoe UI;
 }
 
-p {
+#p-login p {
   padding-bottom: 1.5rem;
 }
 
@@ -67,7 +67,7 @@ p > a {
 }
 
 button {
-  --primary-color: #645bff;
+  --primary-color: #e84393;
   --secondary-color: #fff;
   --hover-color: #111;
   --arrow-width: 10px;
@@ -128,28 +128,6 @@ button:hover .arrow:before {
   right: 0;
 }
 
-h3, h4 {
-  text-shadow: 0 0 20px #fff;
-  color: #fff;
-  margin: 10px;
-  font-family: Segoe UI;
-}
-
-.label-cadastro {
-  margin: 50px;
-}
-
-div.label-cadastro {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-fieldset, input, select {
-  border: none;
-  margin: 6px;
-}
-
 #p-not-found p {
   color: #8a2be2;
   font-size: 1rem;
@@ -183,6 +161,18 @@ fieldset, input, select {
   color: green;
 }
 
+#p-signup h3 {
+  margin-left: 0;
+}
+
+#p-signup label {
+  display: none;
+}
+
+#p-signup p {
+  color: #fff;
+}
+
 #p-contacts {
   margin: 10px;
 }
@@ -199,10 +189,6 @@ button a {
   text-decoration: none;
 }
 
-button #btn-criar {
-  color: red;
-}
-
 #lista-contatos {
   width: 50%;
   justify-content: center;
@@ -216,7 +202,19 @@ button #btn-criar {
 }
 
 #p-contact-details a {
+  color: #fff;
+  text-decoration: none;
   display: block;
+}
+
+#p-contact-details .dados-contato {
+  max-width: 30%;
+  justify-content: space-between;
+  display: flex;
+}
+
+#p-contact-details p {
+  margin: 5px 12px;
 }
 
 #c-header {
@@ -289,6 +287,14 @@ div.label-cadastro {
 fieldset, input, select {
   border: none;
   margin: 6px;
+}
+
+div #btn-voltar {
+  display: flex;
+}
+
+#btn-voltar button {
+  margin: 10px;
 }
 
 body {

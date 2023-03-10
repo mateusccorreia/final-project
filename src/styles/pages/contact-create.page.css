@@ -19,3 +19,12 @@ h3, h4 {
     border: none;
     margin: 6px;
   }
+
+div #btn-voltar {
+    display: flex;
+
+}
+
+#btn-voltar button {
+    margin: 10px;
+}

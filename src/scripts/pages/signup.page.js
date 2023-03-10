@@ -33,13 +33,13 @@ export const Signup = () => {
     signup.innerHTML = `
         <h3>Novo cadastro</h3>
         <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" />
+        <input id="nome" name="nome" type="text" placeholder="digite seu nome"/>
 
         <label for="email">E-mail</label>
-        <input id="email" name="email" type="text" />
+        <input id="email" name="email" type="text" placeholder="digite seu email"/>
 
         <label for="senha">Senha</label>
-        <input id="senha" name="senha" type="password" />
+        <input id="senha" name="senha" type="password" placeholder="digite uma senha"/>
 
         <button id="btn-criar">Criar</button>
         <p>Já tem conta? <a href="/#login">Acesse agora!</a></p>

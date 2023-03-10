@@ -27,3 +27,14 @@ button {
   color: green;
 }
 
+#p-signup h3 {
+  margin-left: 0px;
+}
+
+#p-signup label {
+  display: none;
+}
+
+#p-signup p {
+  color: white;
+}

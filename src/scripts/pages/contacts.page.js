@@ -27,8 +27,7 @@ export const Contacts = () => {
             <h1>Lista de contatos</h1>
         </div>
         <div id="cards"></div>
-        <button id="btn-cadastrar" style="width: 200px;
-         background: black">
+        <button id="btn-cadastrar" style="width: 200px;">
          <a href="/#create-contact">
          Criar contato
          </a></button>

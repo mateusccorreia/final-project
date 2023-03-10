@@ -11,23 +11,29 @@ export const ContactDetails = () => {
     const contato = window.history.state
 
     contactsDetails.innerHTML = `
-        <a href="/#contacts">Voltar para contatos</a>
+
+    <button style="width: 150px"><a href="/#contacts">Voltar para contatos</a></button>
 
         <br>
-        <p><b>Nome:</b>${contato.nome}</p>
-        <p><b>Apelido:</b>${contato.apelido}</p>
-        <p><b>E-mail:</b>${contato.email}</p>
-        <p><b>Notas:</b>${contato.notas}</p>
+        <div class="dados-contato">
+            <div>
+                <h3>Informações:</h3>
+                <p><b>Nome:</b>${contato.nome}</p>
+                <p><b>Apelido:</b>${contato.apelido}</p>
+                <p><b>E-mail:</b>${contato.email}</p>
+                <p><b>Notas:</b>${contato.notas}</p>
+            </div> <br>            
 
-        <br>
-        <h3>Endereço</h3>
-        <p><b>CEP:</b>${contato.endereco.cep}</p>
-        <p><b>Logradouro:</b>${contato.endereco.logradouro}</p>
-        <p><b>Cidade:</b>${contato.endereco.cidade}</p>
-        <p><b>Estado:</b>${contato.endereco.estado}</p>
-        <p><b>País:</b>${contato.endereco.pais}</p>  
-        
-        <br>
+            <div>
+                <h3>Endereço:</h3>
+                <p><b>CEP:</b>${contato.endereco.cep}</p>
+                <p><b>Logradouro:</b>${contato.endereco.logradouro}</p>
+                <p><b>Cidade:</b>${contato.endereco.cidade}</p>
+                <p><b>Estado:</b>${contato.endereco.estado}</p>
+                <p><b>País:</b>${contato.endereco.pais}</p> 
+            </div>
+        </div> <br>       
+
         <h3>Telefone</h3>
         `
 

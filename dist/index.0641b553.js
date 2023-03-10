@@ -622,23 +622,29 @@ const ContactDetails = ()=>{
     root.append(header);
     const contato = window.history.state;
     contactsDetails.innerHTML = `
-        <a href="/#contacts">Voltar para contatos</a>
+
+    <button style="width: 150px"><a href="/#contacts">Voltar para contatos</a></button>
 
         <br>
-        <p><b>Nome:</b>${contato.nome}</p>
-        <p><b>Apelido:</b>${contato.apelido}</p>
-        <p><b>E-mail:</b>${contato.email}</p>
-        <p><b>Notas:</b>${contato.notas}</p>
+        <div class="dados-contato">
+            <div>
+                <h3>Informações:</h3>
+                <p><b>Nome:</b>${contato.nome}</p>
+                <p><b>Apelido:</b>${contato.apelido}</p>
+                <p><b>E-mail:</b>${contato.email}</p>
+                <p><b>Notas:</b>${contato.notas}</p>
+            </div> <br>            
 
-        <br>
-        <h3>Endereço</h3>
-        <p><b>CEP:</b>${contato.endereco.cep}</p>
-        <p><b>Logradouro:</b>${contato.endereco.logradouro}</p>
-        <p><b>Cidade:</b>${contato.endereco.cidade}</p>
-        <p><b>Estado:</b>${contato.endereco.estado}</p>
-        <p><b>País:</b>${contato.endereco.pais}</p>  
-        
-        <br>
+            <div>
+                <h3>Endereço:</h3>
+                <p><b>CEP:</b>${contato.endereco.cep}</p>
+                <p><b>Logradouro:</b>${contato.endereco.logradouro}</p>
+                <p><b>Cidade:</b>${contato.endereco.cidade}</p>
+                <p><b>Estado:</b>${contato.endereco.estado}</p>
+                <p><b>País:</b>${contato.endereco.pais}</p> 
+            </div>
+        </div> <br>       
+
         <h3>Telefone</h3>
         `;
     contato.telefones.forEach((telefone)=>{
@@ -735,8 +741,7 @@ const Contacts = ()=>{
             <h1>Lista de contatos</h1>
         </div>
         <div id="cards"></div>
-        <button id="btn-cadastrar" style="width: 200px;
-         background: black">
+        <button id="btn-cadastrar" style="width: 200px;">
          <a href="/#create-contact">
          Criar contato
          </a></button>
@@ -864,7 +869,7 @@ const Login = ()=>{
             <label for="salvar">Salvar</label>
             <input name="salvar" id="salvar" type="radio" value="true" checked="checked"/>
             <label for="nao-salvar">Não salvar</label>
-            <input name="salvar" id="nao-salvar" type="radio" value="false" />
+            <input name="salvar" id="nao-salvar" type="radio" value="false"/>
         </fildset>
 
         <div>
@@ -962,13 +967,13 @@ const Signup = ()=>{
     signup.innerHTML = `
         <h3>Novo cadastro</h3>
         <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" />
+        <input id="nome" name="nome" type="text" placeholder="digite seu nome"/>
 
         <label for="email">E-mail</label>
-        <input id="email" name="email" type="text" />
+        <input id="email" name="email" type="text" placeholder="digite seu email"/>
 
         <label for="senha">Senha</label>
-        <input id="senha" name="senha" type="password" />
+        <input id="senha" name="senha" type="password" placeholder="digite uma senha"/>
 
         <button id="btn-criar">Criar</button>
         <p>Já tem conta? <a href="/#login">Acesse agora!</a></p>
@@ -1079,7 +1084,10 @@ const CreateContact = ()=>{
 
         </div>
 
-        <button id="btn-criar" style="width: 150px">Salvar</button>
+        <div id="btn-voltar">
+            <button id="btn-criar" style="width: 150px">Salvar</button>
+            <button style="width: 150px"><a href="/#contacts">Voltar</a></button>
+        </div>
 
         <br>
 

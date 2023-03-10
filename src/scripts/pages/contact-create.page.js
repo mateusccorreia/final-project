@@ -80,7 +80,10 @@ export const CreateContact = () => {
 
         </div>
 
-        <button id="btn-criar" style="width: 150px">Salvar</button>
+        <div id="btn-voltar">
+            <button id="btn-criar" style="width: 150px">Salvar</button>
+            <button style="width: 150px"><a href="/#contacts">Voltar</a></button>
+        </div>
 
         <br>
 

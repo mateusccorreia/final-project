@@ -14,10 +14,6 @@ button a {
   color: white;  
 }
 
-button #btn-criar {
-  color: red;
-}
-
 #lista-contatos {
   display: flex;
   align-items: center;
