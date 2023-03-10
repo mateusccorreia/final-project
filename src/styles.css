@@ -6,6 +6,7 @@
 
 @import url(./styles/components/header.component.css);
 @import url(./styles/components/card-contact.component.css);
+@import url(./styles/pages/contact-create.page.css);
 
 body {
   margin: 0;

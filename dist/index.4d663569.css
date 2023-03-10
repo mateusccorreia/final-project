@@ -23,7 +23,6 @@ h2 {
   margin: 15% auto 0;
   padding: 15px;
   font-family: Segoe UI;
-  display: flex;
 }
 
 #p-login fieldset {
@@ -36,7 +35,7 @@ h2 {
   margin-right: 10px;
 }
 
-#p-login input:not(input[type="radio"]), button {
+#p-login input:not(input[type="radio"]) {
   width: 100%;
   box-sizing: border-box;
   margin: 10px 0;
@@ -62,6 +61,11 @@ div > label {
   display: none;
 }
 
+p > a {
+  color: #e84393;
+  text-decoration: none;
+}
+
 button {
   --primary-color: #645bff;
   --secondary-color: #fff;
@@ -71,6 +75,8 @@ button {
   box-sizing: border-box;
   color: var(--secondary-color);
   background: var(--primary-color);
+  text-align: center;
+  width: 100%;
   border: 0;
   border-radius: 20px;
   align-items: center;
@@ -122,6 +128,28 @@ button:hover .arrow:before {
   right: 0;
 }
 
+h3, h4 {
+  text-shadow: 0 0 20px #fff;
+  color: #fff;
+  margin: 10px;
+  font-family: Segoe UI;
+}
+
+.label-cadastro {
+  margin: 50px;
+}
+
+div.label-cadastro {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+fieldset, input, select {
+  border: none;
+  margin: 6px;
+}
+
 #p-not-found p {
   color: #8a2be2;
   font-size: 1rem;
@@ -146,7 +174,6 @@ button:hover .arrow:before {
 }
 
 #p-signup input:not(input[type="radio"]), button {
-  width: 100%;
   box-sizing: border-box;
   margin: 10px 0;
   display: block;
@@ -160,29 +187,28 @@ button:hover .arrow:before {
   margin: 10px;
 }
 
-#btn-cadastrar {
-  letter-spacing: 1.5px;
+h1 {
+  width: 100%;
+  text-shadow: 0 0 15px #fff;
   color: #fff;
-  width: 150px;
-  height: 60px;
-  background-color: #ff3856;
-  border: 0;
-  border-radius: 10px;
-  padding: 17px 40px;
-  font-size: 15px;
-  transition: all .3s;
-  box-shadow: 0 10px #c92e46;
+  font-family: Segoe UI;
 }
 
-#btn-cadastrar:hover {
-  box-shadow: 0 7px #c92e46;
+button a {
+  color: #fff;
+  text-decoration: none;
 }
 
-#btn-cadastrar:active {
-  background-color: #ff3856;
-  transition: all .2s;
-  transform: translateY(5px);
-  box-shadow: 0 0 #c92e46;
+button #btn-criar {
+  color: red;
+}
+
+#lista-contatos {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
 }
 
 #p-contact-details {
@@ -195,9 +221,12 @@ button:hover .arrow:before {
 
 #c-header {
   color: #fff;
-  background-color: #8a2be2;
+  background-color: #00b894;
+  border: 2px solid #fff;
+  border-radius: 6px;
   justify-content: space-around;
   align-items: center;
+  margin: 5px;
   display: flex;
 }
 
@@ -207,9 +236,12 @@ button:hover .arrow:before {
 
 #c-card-contact {
   color: #fff;
-  background-color: #8a2be2;
+  max-width: 60%;
+  height: 60px;
+  background-color: #00b894;
+  border: 2px solid #fff;
+  border-radius: 6px;
   align-items: center;
-  gap: 20px;
   margin: 10px 0;
   display: flex;
 }
@@ -220,19 +252,43 @@ button:hover .arrow:before {
 }
 
 #c-card-contact > a {
-  height: 60px;
-  color: #8a2be2;
-  background-color: silver;
+  height: 30px;
+  color: #fff;
+  background-color: #645bff;
+  border-radius: 6px;
   flex: 0;
   align-items: center;
+  margin: 8px;
   text-decoration: none;
   display: flex;
 }
 
 #c-card-contact > a:hover {
   cursor: pointer;
-  color: #8a2be2;
-  background-color: #a9a9a9;
+  color: #fff;
+  background-color: #000;
+}
+
+h3, h4 {
+  text-shadow: 0 0 20px #fff;
+  color: #fff;
+  margin: 10px;
+  font-family: Segoe UI;
+}
+
+.label-cadastro {
+  margin: 50px;
+}
+
+div.label-cadastro {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+fieldset, input, select {
+  border: none;
+  margin: 6px;
 }
 
 body {

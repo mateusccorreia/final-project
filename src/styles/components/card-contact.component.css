@@ -1,10 +1,13 @@
 #c-card-contact {
     display: flex;
-    gap: 20px;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #00b894;
     color: white;
-    margin: 10px 0
+    margin: 10px 0;
+    border: 2px solid white;
+    border-radius: 6px;
+    max-width: 60%;
+    height: 60px;
 }
 
 #c-card-contact > * {
@@ -17,14 +20,16 @@
     display: flex;
     flex: 0;
     align-items: center;
-    height: 60px;
-    background-color: silver;
-    color: blueviolet;
+    height: 30px;
+    background-color: #645bff;
+    color: white;
     text-decoration: none;
+    border-radius: 6px;
+    margin: 8px;
 }
 
 #c-card-contact > a:hover {
     cursor: pointer;
-    background-color: darkgray;
-    color: blueviolet;
+    background-color: black;
+    color: white;
 }

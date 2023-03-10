@@ -731,13 +731,15 @@ const Contacts = ()=>{
     const header = (0, _headerComponentJs.Header)();
     root.append(header);
     contacts.innerHTML = `
-        <h1>Contatos</h1>
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="Buscar contato">
-            <button id="search-button" style="width: 100px">Buscar</button>
+        <div id="lista-contatos">
+            <h1>Lista de contatos</h1>
         </div>
         <div id="cards"></div>
-        <button id="btn-cadastrar"> <a href="/#create-contact">Criar contato</a></button>
+        <button id="btn-cadastrar" style="width: 200px;
+         background: black">
+         <a href="/#create-contact">
+         Criar contato
+         </a></button>
     `;
     events();
     return contacts;
@@ -860,7 +862,7 @@ const Login = ()=>{
 
         <fildset>
             <label for="salvar">Salvar</label>
-            <input name="salvar" id="salvar" type="radio" value="true" />
+            <input name="salvar" id="salvar" type="radio" value="true" checked="checked"/>
             <label for="nao-salvar">Não salvar</label>
             <input name="salvar" id="nao-salvar" type="radio" value="false" />
         </fildset>
@@ -868,7 +870,7 @@ const Login = ()=>{
         <div>
             <button id="btn-entrar">Fazer login</button>
         </div>
-        <p>Não tem conta? <a href="/#signup" id="criar-conta">Crie agora!</a></p>
+        <p>Não tem conta? <a href="/#signup">Crie agora!</a></p>
     `;
     events();
     return login;
@@ -1043,37 +1045,41 @@ const events = ()=>{
 };
 const CreateContact = ()=>{
     createContact.innerHTML = `
-        <h3>Novo contato</h3>
-        <label for="nome">Nome</label>
-        <input id="nome" name="nome" type="text" placeholder="Insira o nome"/>
+        <h3 id="novo-contato">Novo contato</h3>
+        <div id="label-cadastro">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Insira o nome"/>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="text" placeholder="Insira o e-mail"/>
 
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="text" placeholder="Insira o e-mail"/>
+            <h4>Telefones</h4>
 
-        <fieldset>
-        <select name="tipo-telefone-1" >
-            <option value="casa">Casa</option>
-            <option value="trabalho">Trabalho</option>
-            <option value="celular">Celular</option>
-        </select>
-        <input name="numero-1" type="phone">
-    
-        <select name="tipo-telefone-2" >
-            <option value="casa">Casa</option>
-            <option value="trabalho">Trabalho</option>
-            <option value="celular">Celular</option>
-        </select>
-        <input name="numero-2" type="phone">
-    
-        <select name="tipo-telefone-3" >
-            <option value="casa">Casa</option>
-            <option value="trabalho">Trabalho</option>
-            <option value="celular">Celular</option>
-        </select>
-        <input name="numero-3" type="phone">
-        </fieldset>
+            <fieldset>
+                <select name="tipo-telefone-1" style="display: block;">
+                    <option value="casa">Casa</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="celular">Celular</option>
+                </select>
+                <input name="numero-1" type="phone" placeholder="insira o número">
+            
+                <select name="tipo-telefone-2" style="display: block;">
+                    <option value="casa">Casa</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="celular">Celular</option>
+                </select>
+                <input name="numero-2" type="phone" placeholder="insira o número">
+            
+                <select name="tipo-telefone-3" style="display: block";>
+                    <option value="casa">Casa</option>
+                    <option value="trabalho">Trabalho</option>
+                    <option value="celular">Celular</option>
+                </select>
+                <input name="numero-3" type="phone" placeholder="insira o número">
+            </fieldset>
 
-        <button id="btn-criar">Salvar</button>
+        </div>
+
+        <button id="btn-criar" style="width: 150px">Salvar</button>
 
         <br>
 

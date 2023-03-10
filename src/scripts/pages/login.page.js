@@ -34,7 +34,7 @@ export const Login = () => {
 
         <fildset>
             <label for="salvar">Salvar</label>
-            <input name="salvar" id="salvar" type="radio" value="true" />
+            <input name="salvar" id="salvar" type="radio" value="true" checked="checked"/>
             <label for="nao-salvar">Não salvar</label>
             <input name="salvar" id="nao-salvar" type="radio" value="false" />
         </fildset>
@@ -42,7 +42,7 @@ export const Login = () => {
         <div>
             <button id="btn-entrar">Fazer login</button>
         </div>
-        <p>Não tem conta? <a href="/#signup" id="criar-conta">Crie agora!</a></p>
+        <p>Não tem conta? <a href="/#signup">Crie agora!</a></p>
     `
     events()
     return login

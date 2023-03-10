@@ -23,13 +23,15 @@ export const Contacts = () => {
     root.append(header)
 
     contacts.innerHTML = `
-        <h1>Contatos</h1>
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="Buscar contato">
-            <button id="search-button" style="width: 100px">Buscar</button>
+        <div id="lista-contatos">
+            <h1>Lista de contatos</h1>
         </div>
         <div id="cards"></div>
-        <button id="btn-cadastrar"> <a href="/#create-contact">Criar contato</a></button>
+        <button id="btn-cadastrar" style="width: 200px;
+         background: black">
+         <a href="/#create-contact">
+         Criar contato
+         </a></button>
     `
     events()
     return contacts

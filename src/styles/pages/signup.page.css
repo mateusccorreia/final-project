@@ -19,7 +19,6 @@
 #p-signup input:not(input[type="radio"]),
 button {
   display: block;
-  width: 100%;
   box-sizing: border-box;
   margin: 10px 0;
 }
@@ -27,3 +26,4 @@ button {
 #p-signup h1 {
   color: green;
 }
+
